@@ -2,8 +2,10 @@ import glob
 import time
 import subprocess
 
+PATH_TO_SEARCH = '/home/**/*.vmx'
+
 def get_vm_on_system():
-    return glob.glob('/home/**/*.vmx', recursive=True)
+    return glob.glob(PATH_TO_SEARCH, recursive=True)
     
 
 def get_vm_in_execution(VMS_FOUND):

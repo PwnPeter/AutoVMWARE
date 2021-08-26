@@ -1,4 +1,4 @@
-# AutoVMWARE 🤖
+# AutoVMware 🤖
 Automatically starts and restarts VMWare VMs 💫
 
 ## Get Started 🧙‍♂️

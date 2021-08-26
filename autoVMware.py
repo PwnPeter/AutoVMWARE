@@ -30,11 +30,8 @@ def start_vm(vm_path):
         print(f"Erreur lors du lancement de {vm_path} : {result_start.stderr}")
 
 def main():
-    # while 1:
     VMS_FOUND = get_vm_on_system()
-    # print(VMS_FOUND)
     VMS_NOT_FOUND = get_vm_in_execution(VMS_FOUND)
-    # print(VMS_NOT_FOUND)
     if VMS_NOT_FOUND:
         for vm_path in VMS_NOT_FOUND:
             print(f'############# VM {vm_path.split("/")[::-1][0]} #############')
@@ -42,7 +39,6 @@ def main():
             print("'##########################\n")
     else:
         print("Aucune VM à lancer/relancer.")
-        # print("sleep 300s")
-        # time.sleep(300)
+
 if __name__ == "__main__":
     main()

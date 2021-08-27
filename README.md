@@ -13,7 +13,7 @@ If you use VMware Player or Fusion instead of VMware Workstation, you need to ed
  * `ws` for **Workstation Pro**
  * `fusion` for **VMware Fusion** (MacOS)
  * `player` fir **VMware Player**
- * 
+ 
 example for **VMware Player** :   
 
 `subprocess.run(f'vmrun -T ws stop "{vm_path}"', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)` -> `subprocess.run(f'vmrun -T player stop "{vm_path}"', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)`
